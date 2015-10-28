@@ -1,0 +1,6 @@
+.DS_Store
+*.class
+.com.apple.timemachine.supported
+.idea
+.ruby-gemset
+.ruby-version
