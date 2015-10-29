@@ -11,8 +11,6 @@ ZSH_THEME="af-magic"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mongod="mongod --config ~/mongodb.config"
-alias gcc="/usr/local/bin/gcc-4.9"
-alias dropbox="/Users/peng/Dropbox"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -52,8 +50,6 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export MONO_GAC_PREFIX="/usr/local"
-
-PATH=$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/9.3/bin:/opt/bin:/usr/local/go/bin:/Users/peng/Workspace/android-sdk-macosx/tools:/Users/peng/Workspace/android-sdk-macosx/platform-tools:/Users/peng/Workspace/android-sdk-macosx/build-tools/20.0.0:/Applications/Racket\ v6.1.1/bin:/usr/texbin:/Library/Frameworks/GHC.framework/Versions/Current/usr/bin:/Library/Haskell/bin
 
 GOROOT=/usr/local/go
 GOPATH=/Users/peng/Workspace/golang

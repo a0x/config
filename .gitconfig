@@ -1,6 +1,6 @@
 [user]
-	name = foo
-	email = fooo@bar.com
+	name = ''
+	email = ''
 [color]
 	ui = true
 [push]
@@ -13,16 +13,10 @@
 	last = log -1 HEAD
 	unstage = reset HEAD --
 [core]
-	editor = atom -w
+	editor = vim -w
 	pager = less -+$LESS -FRX
-	excludesfile = /Users/peng/.gitignore_global
+	excludesfile = /home/peng/.gitignore_global
 [http]
 	postBuffer = 524288000
 [merge]
 	tool = vimdiff
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
