@@ -53,9 +53,24 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export MONO_GAC_PREFIX="/usr/local"
 
-PATH=$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/9.3/bin:/opt/bin:/usr/local/go/bin:/Users/peng/Workspace/android-sdk-macosx/tools:/Users/peng/Workspace/android-sdk-macosx/platform-tools:/Users/peng/Workspace/android-sdk-macosx/build-tools/20.0.0:/Applications/Racket\ v6.1.1/bin:/usr/texbin:/Library/Frameworks/GHC.framework/Versions/Current/usr/bin:/Library/Haskell/bin
+## Android
+ANDROID_SDK="/Users/peng/Workspace/android-sdk-macosx/tools"
+ANDROID_TOOLS="/Users/peng/Workspace/android-sdk-macosx/platform-tools"
+ANDROID_BUILD_TOOLS="/Users/peng/Workspace/android-sdk-macosx/build-tools/20.0.0"
 
+## Golang
+GOLANG_HOME="/usr/local/go"
 GOROOT=/usr/local/go
 GOPATH=/Users/peng/Workspace/golang
+
+## Haskell
+HASKELL_HOME="/Library/Frameworks/GHC.framework/Versions/Current/usr"
+HASKELL_CABAL_HOME="/Library/Haskell"
+
+PG_HOME="/Applications/Postgres.app/Contents/Versions/9.3"
+RACKET_HOME="/Applications/Racket\ v6.1.1"
+
+PATH=$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:/sbin:$PG_HOME/bin:/opt/bin:$GOLANG_HOME/bin:$ANDROID_SDK:$ANDROID_TOOLS:$ANDROID_BUILD_TOOLS:$RACKET_HOME/bin:$HASKELL_HOME/bin:$HASKELL_CABAL_HOME/bin
+
 # JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
 # archey -c
