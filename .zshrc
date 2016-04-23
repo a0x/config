@@ -52,9 +52,8 @@ ENABLE_CORRECTION="true"
 plugins=(git ruby rvm gem zsh-syntax-highlighting)
 
 # User configuration
-
-export SCALA_HOME="$HOME/lib/scala"
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$SCALA_HOME/bin:~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.2/bin:/opt/happy/1.19.5/bin/opt/alex/3.1.4/bin:~/.cabal-sandbox/bin"
+RVM_PATH="$HOME/.rvm/bin"
+export PATH="$PATH:$RVM_PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -83,5 +82,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
