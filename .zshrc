@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+  export ZSH=/home/peng/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -52,8 +52,8 @@ ENABLE_CORRECTION="true"
 plugins=(git ruby rvm gem zsh-syntax-highlighting)
 
 # User configuration
-RVM_PATH="$HOME/.rvm/bin"
-export PATH="$PATH:$RVM_PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
+# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,14 +82,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export NVM_DIR="/home/peng/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
+alias spoon="/opt/data-integration/spoon.command"
+alias cls="clear"
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Workspace/go
+export HIVE_HOME=/opt/apache-hive-2.1.0-bin
+PATH=$PATH:$JAVA_HOME/bin:/usr/local/go/bin:$GOROOT/bin:/opt/bin:/opt/hadoop-2.7.3/bin:/opt/hbase-1.2.4/bin:$HIVE_HOME/bin
