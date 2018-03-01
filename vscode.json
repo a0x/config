@@ -1,0 +1,30 @@
+{
+    // "editor.fontFamily": "'Monaco'",
+    // "editor.fontSize": 15,
+    "editor.wordWrap": "on",
+    "editor.cursorStyle": "block-outline",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [80,120],
+    "editor.renderWhitespace": "boundary",
+    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorCustomizations": {
+        "editor.selectionHighlightBackground": "#fbff00"
+        // "editor.selectionBackground": "#88a9ffd0"
+    },
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": false,
+    "files.exclude": {
+        "**/*.pyc": true
+    }
+}
