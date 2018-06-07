@@ -12,11 +12,16 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	last = log -1 HEAD
 	unstage = reset HEAD --
+  cp = cherry-pick
 [core]
-	editor = vim -w
+	editor = subl -n -w
 	pager = less -+$LESS -FRX
 	excludesfile = ~/.gitignore_global
 [http]
 	postBuffer = 524288000
+	proxy = http://127.0.0.1:1080
 [merge]
 	tool = vimdiff
+[https]
+  postBuffer = 524288000
+	proxy = http://127.0.0.1:1080
