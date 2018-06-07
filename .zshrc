@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -82,10 +82,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias spoon="/opt/data-integration/spoon.command"
+# alias spoon="/opt/data-integration/spoon.command"
 alias cls="clear"
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Workspace/go
-export HIVE_HOME=/opt/apache-hive-2.1.0-bin
-PATH=$PATH:$JAVA_HOME/bin:/usr/local/go/bin:$GOROOT/bin:/opt/bin:/opt/hadoop-2.7.3/bin:/opt/hbase-1.2.4/bin:$HIVE_HOME/bin
+PATH=$PATH:$JAVA_HOME/bin:/usr/local/go/bin:$GOROOT/bin:/opt/bin
+xmodmap -e "pointer = 1 9 3 4 5 6 7 8 2"
+
